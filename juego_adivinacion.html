@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h1> Programa Juego de Adivinacion</h1>
+
+<script>
+
+	function saltarLinea(){
+		document.write("<br><br>")
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+    var numeroPensado = Math.round(Math.random()*10)
+    //redondeamos el numero random porque normalmente este nos muestra un numero deciml de 0 a 1
+    // pero si lo multiplicamos por 10 el rango va a ser de decimales entre 0 y 10, dado esto lo redondeamos con round
+    var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"))
+
+    if (numeroLanzado == numeroPensado){
+        imprimir("Usted acerto")
+    } else{ //el else no lleva condicion a evaluar
+        imprimir("Usted no acerto, el numero pensado era "+numeroPensado)
+    }
+
+</script>
