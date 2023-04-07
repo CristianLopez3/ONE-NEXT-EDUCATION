@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+<h1> Calcular Indice de Masa Corporal - IMC</h1>
+
+<script>
+
+	function saltarLinea(){
+
+		document.write("<br><br>")
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+	function calcularImc(peso, altura){
+
+		imc = peso / (altura * altura);
+		return imc;
+		
+	}
+
+	nombre = prompt("Ingrese su nombre")
+	pesoInformado = prompt(nombre+" informe su peso");
+	alturaInfomada = prompt(nombre+" Informe su altura");
+
+	imcCalculado = calcularImc(pesoInformado, alturaInfomada);
+
+	imprimir(nombre+" su imc calculado es: "+imcCalculado);
+
+	if (imcCalculado < 18.5){
+		imprimir(" IMC abajo de lo recomendado");
+		//Tambien se puede hacer con if anidados//
+	}
+
+	if (imcCalculado > 18.5 && imcCalculado < 25){
+		imprimir("IMC en el intervalo recomendado");
+	}
+
+	if (imcCalculado >= 25.0 && imcCalculado < 30 ){
+		imprimir("IMC en el intervalo de sobrepeso")
+	}
+
+
+	if (imcCalculado >= 30){
+		imprimir("IMC considerado  obesidad");
+	}
+
+
+	// imprimir (" El promedio del imc calculado de Cristian y Felipe es: "+(calcularImc(70, 1.78)+calcularImc(57, 1.67))/2)
+	// imprimir (" El promdeio del imc calculado de Daniela y Paola es: "+(calcularImc(50, 1.68)+calcularImc(47, 1.57))/2)
+
+</script>

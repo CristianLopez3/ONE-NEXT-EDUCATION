@@ -1,0 +1,54 @@
+<!-- <meta charset="UTF-8">
+<h1> Programa </h1>
+
+<script>
+
+	var anho = 2025;
+	var saltoLinea ="<br><br><br>";
+
+	document.write("Juan tiene "+(anho-2000)+" años")
+	document.write(saltoLinea);
+	document.write("Pedro tiene "+(anho-1995)+" años")
+	
+
+	anho = 2030;
+
+	document.write(saltoLinea);
+	document.write("Carlos tiene "+(anho-2005)+" años")
+	
+</script> -->
+
+
+<meta charset="UTF-8">
+<h1> Programa </h1>
+
+<script> //Funciones//
+	
+	function saltarLinea(){
+
+		document.write("<br><br><br>");
+
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	var anho = 2025;
+
+	imprimir("Hola amigos");
+	
+	//Este codigo calcula las edades de Juan, Carlos y Pedro
+
+	imprimir("Juan tiene "+(anho-2000)+" años")
+
+	imprimir("Pedro tiene "+(anho-1995)+" años")
+	
+	anho = 2030;
+
+	imprimir("Carlos tiene "+(anho-2005)+" años")
+	
+</script>
