@@ -1,4 +1,4 @@
 # Logica De Programación
 ## Curso de Oracle One
-<p> Archivos de los cursos que voy desarrollando en el programa ONE de Oracle </p>
+<p> :computer: Archivos de los cursos que voy desarrollando en el programa ONE de Oracle :computer: </p>
 :star: 
