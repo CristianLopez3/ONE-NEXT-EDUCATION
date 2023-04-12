@@ -1,0 +1,30 @@
+<canvas width="350" height="300" ></canvas>
+<script>
+    let pantalla = document.querySelector("canvas");
+    let pincel = pantalla.getContext("2d"); //Especificamos las dimensiones de nuestro canvas.
+
+    pincel.fillStyle = "darkgreen";
+    pincel.fillRect(0, 0, 600, 400); // con el fill rect le decimos al canvas que puede usar tantos pixeles, pero acuerdate que ya definimos que ya tiene un tamaño definido previamente.
+    /* Rectángulo 1: 350, 300 (cabeza).
+    Rectángulos 2 y 3: 90, 90 (ojos).
+    Rectángulo 4: 70, 100 (nariz).
+    Rectángulos 5 y 6: 40, 110 (parte de la boca). Su canvas debe tener el tamaño de 600 x 400 pixeles */
+   
+    //ojo izquierdo
+    pincel.fillStyle = "black";
+    pincel.fillRect(50, 50, 90, 90);
+    //ojo derecho
+    pincel.fillStyle = "black";
+    pincel.fillRect(210, 50, 90, 90);
+    //nariz
+    pincel.fillStyle = "black";
+    pincel.fillRect(140, 140, 70, 100);
+    //colmillo izquierdo
+    pincel.fillStyle = "black";
+    pincel.fillRect(100, 190, 40, 110);
+    //colmillo derecho
+    pincel.fillStyle = "black";
+    pincel.fillRect(210, 190, 40, 110);
+
+
+</script>
