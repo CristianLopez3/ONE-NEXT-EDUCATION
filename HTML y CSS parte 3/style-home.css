@@ -1,0 +1,51 @@
+/* CSS = cascading style sheet. Como funcione css: Todo lo que adicionamos en el elemento padre es reflejado en los elementos hijos. */
+body{
+    background-color: #CCCCCC; /*',1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. (r r  g g  b b); el sistema hexadecimal funciona con 6 datos, donde entre menor sea  el   número más oscuro va a ser el color.*/
+
+}
+
+#banner{
+    width: 100%; /* El porcentaje dice que cantidad de pantalla puede utilizar de la que se dispone.*/ 
+}
+
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+
+p, h1{
+    text-align: center;
+}
+
+#mision{ /* el # es para llamar un id*/
+    font-size: 20px; 
+}
+
+em strong{ /*este color solo se le asigna el strong que sea hijo de em*/
+    color: red;
+}
+
+/* ### Segunda sección ### */
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block; /*el inline hace que la etiqueta a la que nos referimos solo ocupe el espacio que necesito y no toda una sección de la pagina, pero claro a esto le podemos estilo tambien.*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
