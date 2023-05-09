@@ -7,39 +7,64 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Barberia Alura</title>
-        <link rel="stylesheet" href="style-home.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset/reset.css">
+
     </head>
 
     <body>
 
-        <img id="banner" src="banner/banner.jpg" alt="barberia">
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes\logo.png" alt="logo"></h1>
+                <nav>
+                    <ul class="navegacion">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <div class="principal" >
+        <img class="banner" src="banner/banner.jpg" alt="banner">
 
-            <h1>Sobre la Barbería Alura</h1>
-            <!-- p = paragraph-->
-            <p >Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+        <main>
 
-            <p id="mision"><em>>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+            <section class="principal" >
 
-            <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>
+                <!-- p = paragraph-->
+                <p >Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
 
-        </div>
+                <p id="mision"><em>Nuestra misión es:<strong> "Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
 
-        <div class="diferenciales">
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
 
-            <h2>Diferenciales</h2>
+            </section>
+            
+            <section class="diferenciales">
 
-            <ul >
-                <li class="items">Atención personalizada a los clientes</li>
-                <li class="items">Espadio diferenciado</li>
-                <li class="items">Localicación</li>
-                <li class="items">Profesionales calificados</li>
-            </ul>
+                <h2 class="titulo-principal">Diferenciales</h2>
 
-            <img src="diferenciales\diferenciales.jpg" alt="barbero" class="imagenDiferenciales">
+                <ul >
+                    <li class="items">Atención personalizada a los clientes</li>
+                    <li class="items">Espadio diferenciado</li>
+                    <li class="items">Localicación</li>
+                    <li class="items">Profesionales calificados</li>
+                </ul>
 
-         </div>
+                <img src="diferenciales\diferenciales.jpg" alt="barbero" class="imagenDiferenciales">
+                
+
+            </section>
+
+        </main>
+
+        <footer>
+            <img alt="logo" src="imagenes/logo-blanco.png">
+            <p class="copyright"> &copy Copyright Barberia Alura 2020</p>
+        </footer>
 
     </body>
 </html>
