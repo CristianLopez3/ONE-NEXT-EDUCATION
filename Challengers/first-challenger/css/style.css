@@ -23,7 +23,6 @@ body{
 
 main{
     display: flex;
-    
 }
 
 /* estilos de la seccion izquierda */
@@ -41,19 +40,19 @@ h1 img{
 h1{
     color: var(--gray-dark);
     padding: 20px;
-    margin-left: 30px;
 }
-
 textarea{
     border: none;
     width: 100%;
     padding: 20px;
-    margin: 20px 0 100px 200px;
+    /* margin: 20px 0 100px 200px; */
+    margin: 10%;
     resize: none;
     background-color: transparent;
     font-size: 25px;
     line-height: 48px;
     font-family: 'Roboto Mono', monospace;
+    display: block;
 }
 
 textarea::placeholder{
@@ -65,7 +64,7 @@ textarea:focus{
 }
 
 .input{
-    margin: 230px 0 0 200px;
+    margin: 30% 0 0 30%;
 }
 
 .input p {
@@ -101,7 +100,6 @@ input:hover{
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0 0 40px;
-    height: 700px;
     width: 25%;
     background-color: white;
     border-radius: 30px;
@@ -134,7 +132,6 @@ footer{
     background: var(--gray-500);
     justify-content: center;
     align-items: center;
-
 }
 
 footer p{
@@ -142,3 +139,69 @@ footer p{
     padding: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .text-area {
+        display: block;
+    }
+
+    textarea {
+        display: flex;
+        font-size: 15px;
+        width: 100%;
+        margin: 20% 0 0 10%;
+    }
+
+    /* Estilos de la sección izquierda */
+
+    .text-area {
+        width: 100%;
+    }
+
+    .input {
+        margin: 50% 6% 0;
+    }
+
+    input {
+        font-size: 13px;
+        transition: 0.5s;
+        border: none;
+        margin-top: 20px;
+    }
+
+    /* Estilos de la sección derecha, que ahora pasara a ser inferior */
+
+    .show-area{
+        margin: 20px 20px 0 20px;
+     
+        width: 90%;
+        position: absolute;
+        top: 800px;
+        display: block;
+        /* flex-wrap: wrap; */
+    }
+    .show-area img{
+        display: none;
+    }
+
+
+    /* estilos del footer */
+    footer{
+        position: absolute;
+        top: 1000px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    textarea{
+        margin: 20% 0 0 10%;
+    }  
+    
+}
