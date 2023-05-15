@@ -50,7 +50,18 @@
           <li>git stash - es una excelente funcionalidad ya que nos permite guardar cambios de nuestro codigo sin necesidad de hacer un commit</li>
           <li>git diff (codigo primer commit)..(codigo segundo commit). 
           Nos permite todo lo que hemos modificado entre estos dos commit, y ten en cuenta que solo funciona en cosas que no han sido commiteadas</li>
-          <li>Podemos definir commits como la tag de una version asi como un punto de guardado que queda fijo</li>
+          <li>Podemos definir commits como la tag de una version asi como un punto de guardado que queda fijo
+               git tag -a (nombre de la tag) -m (mensaje de la tag)
+          </li>
      </ul>
+     <p>En esta clase aprendemos:
+
+          Que es posible ver qué cambios se hicieron en cada archivo, con el comando git diff;
+          Que, al escribir solo git diff, vemos los cambios en nuestros archivos que no se agregaron para commit (con git add);
+          Que es posible comparar cambios entre dos ramas con git diff <branch1> .. <branch2>
+          Que es posible comparar los cambios realizados entre un commit y otro, usando el comando git diff <commit1> .. <commit2>;
+          Que Git nos permite guardar “marcos” de nuestra aplicación, por ejemplo, generando versiones, a través de git tag;
+          Que el comando git tag -a se usa para generar una nueva tag;
+          Las Releases de GitHub, que son generadas para cada tag de Git que creamos en nuestro repositorio.</p>
 </body>
 </html>
