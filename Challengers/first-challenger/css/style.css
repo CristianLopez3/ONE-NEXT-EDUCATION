@@ -200,8 +200,26 @@ footer p{
 }
 
 @media screen and (max-width: 375px){
-    textarea{
+   textarea{
         margin: 20% 0 0 10%;
     }  
+
+    input{
+        margin: 5px 19px;
+
+    }
+
+    .show-area{
+        position: absolute;
+        top: 70%;
+        margin: 0 35px;
+    }
+
+    footer{
+        position: absolute;
+        top: 90%;
+        margin: 0 35px;
+        width: 100%;
+    }
     
 }
