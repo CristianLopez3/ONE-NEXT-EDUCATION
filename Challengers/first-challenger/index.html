@@ -4,41 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <title>Encriptador | Oracle+AluraLATAM</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <header>
+        <div class="contenedor">
+            <div class="header_img">
+                <img src="img/alura-logo.svg" alt="Logo de Alura">
+            </div>
+        </div>
+    </header>
+
     <main>
+        <div class="contenedor">
+            <div class="encriptador">
 
-        <section class="text-area">
+                <form class="encriptador_form">
+                    <div class="text_in">
 
-            <header>
-                <h1><img src="img/alura-logo.svg" alt="logo alura">Challenger Encriptador</h1>
-           </header>
+                <!-- LUGAR DONDE SE ENCUENTRA EL TEXT-AREA -->
+                <!-- todo == ID -> TEXTO -->
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
 
-            <textarea name="encriptador" id="encriptador" placeholder="INGRESE TEXTO AQUI" id="mi-textarea" required></textarea>
+                        <div class="text_in_info">
 
-            <div class="input">
-                <p> ! solo letras minusculas y sin acentos</p>
-                <input type="button" value="    Encriptar  ">
-                <input type="button" value="Desencriptar">
-             </div>
+                            <div class="info">
+                                <img src="./img/exclamacion.svg" alt="">
+                                <!-- TODO == ID -> WARNING -->
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
 
-        </section>
+                            <!-- TODO == ID'S -> ENC, DESC -->
+                            <div class="text_in_btns">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
 
-        <section class="show-area">
-            <img src="img/Muñeco.png" alt="">
-            <p><span>Ningún mensaje fue <br>encontrado</span> <br> Ingresa el texto que deseas encriptar o <br> desencriptar</p>
-        </section>
-        
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="text_out_sec">
+                    <div class="out_content">
+
+                        <!-- TODO == ID -> DEFAULT -->
+                        <div class="content" id="default">
+                            <div class="text_out_img">
+                                <img src="img/Muñeco.png" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+
+                        <!-- LUGAR DONDE SE AGREGA LA CLASE CONTENT-INVISIBLE -> -->
+                        <!-- TODO == ID -> RESULT  -->
+                        <div class = "content invisible" id="result">
+
+                            <!-- TODO == ID -> TEXT - OUT  -->
+                            <textarea name="text_out_area" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                        
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
-    <footer>
-        <p>&copy; Derechos de autor para Cristian Camilo Lopez Martinez - Alura+Latam</p>
-    </footer>
-  
-    <script src="js/app.js"></script>
+    <script src="index.js"></script>
 
+    <footer class="pie-pagina">
+        <p>&copy; Derechos de autor para: Cristian Camilo Lopez Martinez || challenger encriptador ALURA LATAM+ORACLE</p>
+     
+    </footer>
 </body>
+
+<script src="js/app.js"></script>
 </html>
